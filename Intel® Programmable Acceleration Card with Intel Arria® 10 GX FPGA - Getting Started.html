@@ -1,0 +1,565 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+
+
+<html id="intel_fpga" class="en_us" data-region="en_us">
+<head>
+  
+<title>Intel® Programmable Acceleration Card with Intel Arria® 10 GX FPGA - Getting Started</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=8; IE=9; IE=10; IE=11">
+  <meta name="description" content="This page allows you to download and get started with the acceleration stack">
+  <meta name="date" content="2019-06-21">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Intel Acceleration Stack, download, get started, Intel Arria 10 GX FPGA, Intel Programmable Acceleration Card , Intel PAC">	
+
+<title>Getting Started</title>
+
+  <link rel="stylesheet" href="/etc/clientlibs/psg/core/granite/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/altera-www/global/custom-bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/altera-www/global.min.css" type="text/css">
+<script type="text/javascript" src="/etc/clientlibs/psg/core/granite/jquery.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/psg/core/granite/utils.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/psg/core/granite/jquery/granite.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/psg/core/foundation/jquery.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/psg/core/granite/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/psg/core/foundation/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/altera-www/global/custom-bootstrap.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/altera-www/global.min.js"></script>
+<link rel="stylesheet" href="/etc/clientlibs/altera-www/fonts/default.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/altera-www/components.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/altera-www/comps.min.css" type="text/css">
+<!-- Tealium Tagging + target -->
+    <script type="text/javascript">
+      var wapLocalCode = 'us-en';
+      var wapSection = "altera";
+    </script>
+    <script type="text/javascript" src="https://www.intel.com/content/dam/www/global/wap/wap-altera.js"></script>
+<!--IGHF (Performance tweaks for Mobile and Slow connections)-->  
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://www.intel.com" pr="1.0">
+<link rel="dns-prefetch" href="https://www.google-analytics.com" pr="1.0">
+<link rel="preconnect" href="https://www.intel.com" crossorigin="anonymous" pr="1.0">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" pr="1.0"> 
+<!--/IGHF-->
+	
+    <!--IGHF Loader-->
+<!--[if le IE 9]>
+<script type="text/javascript" src="https://www.intel.com/ighf/50recode.2/js/headerchooser.js" ASYNC DEFER></script>
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<script type="text/javascript" src="https://www.intel.com/ighf/50recode.2/js/headerchooser.js" ASYNC></script>
+<!--<![endif]-->
+<script>INTELNAV = window.INTELNAV || {};INTELNAV.renderSettings={version:"2.0 - 03/12/2017 08:00:00",textDirection:"--",culture:"--",OutputId:"--"};</script>
+<!--/IGHF Loader--></head>
+
+<body>
+<script type="text/javascript" src="/content/dam/altera-www/global/en_US/scripts/js/survey/onsite.js"></script>
+<script type="text/javascript">
+      INTELNAV.dashboard = {
+        languageSelector: {
+          settings: {
+            behavior: "mineOnly",
+            method: "path",
+            regex: /\/content\/www\/\w{2}\/\w{2}/
+          },
+          geos: [
+            { geo: "en_us", path: "/content/www/us/en" },
+            { geo: "zh_cn", path: "/content/www/cn/zh" },
+            { geo: "ja_jp", path: "/content/www/jp/ja" }
+          ]
+        }
+      };
+    </script>
+    <!--googleoff:all-->
+    <!--IGHF Header-->
+<!--GAATversion='50recode.2' date='10/02/2017 08:00:00' Version='2.0':CharacterEncoding:utf8--> 
+<div id="recode50header"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+INTELNAV = window.INTELNAV || {};INTELNAV.renderSettings={version:"2.0 - 10/02/2017 08:00:00",textDirection:"ltr",culture:"en_US",OutputId:"default"};
+/*]]>*/</script>
+<noscript><link rel="stylesheet" href="https://www.intel.com/ighf/50recode.2/css/ltr_nojsheader.css" type="text/css"><div id="smallfootprint-header"><a href="https://www.intel.com/content/www/us/en/homepage.html" class="gaat40-logo" title="Logo - Intel"></a><form method="get" id="user-bar-searchbox-form" name="user-bar-searchbox-form" action="https://www.intel.com/content/www/us/en/search.html"><input id="toplevelcategory" name="toplevelcategory" type="hidden" value="none" tabindex="0"><input id="query" name="query" type="hidden" value="" tabindex="0"><fieldset><legend></legend><label for="input-search">Search</label><input type="text" id="input-search" name="keyword" tabindex="0" autocomplete="off" /><input type="submit" id="input-submit" name="input-submit" value="Search" /></fieldset></form></div></noscript>
+<!--/IGHF Header-->
+    <!--googleon:all--><div class="main-wrapper" id="page_generic_tabbed"> <nav class="breadcrumbs-container">
+  <div class="breadcrumbs container breadcrumb"><a class="breadcrumb-links" href="/content/altera-www/global/en_us/index.html" onclick="CQ_Analytics.record({event:'followBreadcrumb',values: { breadcrumbPath: '/content/altera-www/global/en_us/index.html' },collect: false,options: { obj: this },componentPath: 'altera-www/components/included/breadcrumb'})">Intel® FPGAs and Programmable Devices</a>
+<span class="breadcrumb-arrow">/</span>
+<a class="breadcrumb-links" href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx.html" onclick="CQ_Analytics.record({event:'followBreadcrumb',values: { breadcrumbPath: '/content/altera-www/global/en_us/index/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx.html' },collect: false,options: { obj: this },componentPath: 'altera-www/components/included/breadcrumb'})">Intel® Programmable Acceleration Card with Intel Arria® 10 GX FPGA</a>
+<span class="breadcrumb-arrow">/</span>
+<span class="title">Getting Started</span>
+</div>
+</nav>
+
+<div class="top-ipar iparsys parsys"><header class="title section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="img-title small">
+	
+	
+
+
+
+
+    <picture>
+        
+            <source media="(min-width: 768px)" srcset="/content/dam/altera-www/global/en_US/images/solutions/acceleration-hub/acceleration-hub-traffic-car-lights-motion-banner-16x9.jpg/jcr:content/renditions/cq5dam.web.1920.1080.jpeg">
+            <source media="(min-width: 480px)" srcset="/content/dam/altera-www/global/en_US/images/solutions/acceleration-hub/acceleration-hub-traffic-car-lights-motion-banner-16x9.jpg/jcr:content/renditions/cq5dam.web.978.550.jpeg">
+            <source srcset="/content/dam/altera-www/global/en_US/images/solutions/acceleration-hub/acceleration-hub-traffic-car-lights-motion-banner-16x9.jpg/jcr:content/renditions/cq5dam.web.576.324.jpeg">
+    
+            <img src="/content/dam/altera-www/global/en_US/images/solutions/acceleration-hub/acceleration-hub-traffic-car-lights-motion-banner-16x9.jpg/_jcr_content/renditions/cq5dam.web.1920.1080.jpeg" class="img-responsive"/>
+        
+            
+        
+    </picture>
+
+	
+	<div class="title-content-wrapper center-align">
+		
+		
+		<div class="text-container">
+		    
+		    
+		        <h1 class="page-title  headline-title">Intel® Programmable Acceleration Card with Intel Arria® 10 GX FPGA</h1>
+		    
+
+		    
+		        
+				
+		    
+		</div>
+	</div>
+</div>
+</header>
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="top-ipar iparsys parsys"></div>
+</div>
+</div>
+<div class="link-bar-container">
+<div class="link-bar container"><ul class="no-bullets link-bar-nav">
+	<li class='link-bar-item'><a class='link-bar-url' target='_self' href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/overview.html" null>Overview</a>
+      </li><li class='link-bar-item'><a class='link-bar-url' target='_self' href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/specifications.html" null>Specifications</a>
+      </li><li class="link-bar-item active"><a class='link-bar-url'>Getting Started</a>
+      </li><li class='link-bar-item'><a class='link-bar-url' target='_self' href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/documentation.html" null>Resources</a>
+      </li><li class='link-bar-item'><a class='link-bar-url' target='_self' href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/buy.html" null>Qualified Servers and Ordering Info</a>
+      </li></ul>
+</div>
+</div>
+
+<div class="main-content"><!--  start of main-content -->
+  <div class="content-body-par parsys">
+
+
+<div class="text-media parbase">
+
+
+
+<div class=" theme-white theme-dark-text">
+	<div class="container -container">
+		<div class="txt-media-wrapper top-padding bottom-padding  row section-content multimedia-on-right   ">
+			
+
+
+
+<!--    <figure class="text-media-item text-media-image col-md-6 col-sm-6 col-xs-12 even-split  pull-right ">-->
+   <figure class="text-media-item text-media-image section-content  col-md-6 col-sm-6 col-xs-12 even-split text-media-video ">
+        
+        
+            <link rel="stylesheet" href="/etc/clientlibs/altera-www/components/general/video-reference.min.css" type="text/css">
+<script type="text/javascript" src="/etc/clientlibs/altera-www/components/general/video-reference.min.js"></script>
+
+
+
+	
+
+	
+        <video id="cq-video-html5-1572043767002" data-play-from-modal="false" data-play-from-link="false" width="" poster="/content/dam/altera-www/global/en_US/video/getting-started-with-intel-pac-with-intel-a10-gx-fpga.mp4.thumb.319.319.png" height="" class="video-js vjs-default-skin vjs-big-play-centered" preload="none" data-setup="{}" controls>
+            <source src="/content/dam/altera-www/global/en_US/video/getting-started-with-intel-pac-with-intel-a10-gx-fpga.mp4" type="video/mp4"/>
+        </video>
+	
+	
+
+
+        
+    </figure>
+
+
+
+    <section class='text-media-item txt-media-content-wrapper-right text-media-content article-section col-md-6 col-sm-6 col-xs-12  '>
+        
+
+
+
+
+
+	<header class="txt-multimedia-hd" title="Get Started Today by Downloading the Acceleration Stack!">
+		
+				<h2 class="txt-media-title content-title headline-title">Get Started Today by Downloading the Acceleration Stack!</h2>
+		
+
+		
+	</header>
+
+        <div class="txt-multimedia-content">
+        <ul>
+<li>Software developers who develop and integrate their host application with accelerator functions can download the <b>Acceleration Stack for Runtime</b></li>
+<li>Accelerator function developers who design using register transfer level (RTL) and OpenCL™ can download the <b>Acceleration Stack for Development</b></li>
+</ul>
+
+</div>
+        
+
+
+    </section>
+
+		</div>
+		
+	</div>
+</div></div>
+<div class="table parbase"><div class="altera-table container">
+<div class="table-title"><h2>Download Intel® Acceleration Stack Version 1.2</h2></div><div class="table-wrapper top-padding bottom-padding">
+        <div class="table-content table-responsive " id="comp-75d60f2d-9c7d-44dc-a201-09b4f7eca7cc">
+        <input type="hidden" id="keywords_text" value="" />
+
+
+            <table border="0" cellspacing="0" cellpadding="1">
+<tbody><tr><th>Components</th>
+<th width="40%">Acceleration Stack for Runtime</th>
+<th width="40%">Acceleration Stack for Development</th>
+</tr><tr><td>Purpose</td>
+<td>Smaller footprint package for software development of runtime host application. Intel® Quartus® Prime Software not included.</td>
+<td>Accelerator function development using the Intel Quartus Prime Pro Edition Software, Intel FPGA Software Development Kit (SDK) for OpenCL™ and Acceleration Stack</td>
+</tr><tr><td>Intel Acceleration Stack Version</td>
+<td>Intel Acceleration Stack Version 1.2</td>
+<td>Intel Acceleration Stack Version 1.2</td>
+</tr><tr><td>Intel Quartus Prime software and interfaces</td>
+<td>Not required. Pre-compiled binaries and FPGA images provided in the release</td>
+<td>Requires Intel Quartus Prime Pro Edition software version 17.1.1. Software and related interfaces (SR-IOV, Low Latency 10 Gbps and 40 Gbps Ethernet MAC/PHY) are provided in the release</td>
+</tr><tr><td>OpenCL software</td>
+<td>Intel FPGA Runtime Environment (RTE) for OpenCL</td>
+<td>Intel FPGA SDK for OpenCL</td>
+</tr><tr><td>Validated Servers</td>
+<td><a href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/buy.html" target="_blank">View server&nbsp;models</a></td>
+<td><a href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/buy.html" target="_blank">View server&nbsp;models</a></td>
+</tr><tr><td>Validated operating system</td>
+<td>RHEL 7.4, CentOS 7.4, Ubuntu 16.04</td>
+<td>RHEL 7.4, CentOS 7.4, Ubuntu 16.04</td>
+</tr><tr><td>Release notes</td>
+<td><a href="/content/www/us/en/programmable/documentation/fqy1537586638245.html" target="_blank">Intel® Acceleration Stack for Intel® Xeon® CPU with FPGAs Version 1.2 Release Notes</a></td>
+<td><a href="/content/www/us/en/programmable/documentation/fqy1537586638245.html">Intel® Acceleration Stack for Intel® Xeon® CPU with FPGAs Version 1.2 Release Notes&nbsp;</a></td>
+</tr><tr><td>Quick Start Guide*</td>
+<td><a href="/content/www/us/en/programmable/documentation/iyu1522005567196.html" target="_blank">Intel Acceleration Stack Quick Start Guide for Intel Programmable Acceleration Card with Intel Arria 10 GX FPGA</a></td>
+<td><a href="/content/www/us/en/programmable/documentation/iyu1522005567196.html" target="_blank">Intel Acceleration Stack Quick Start Guide for Intel Programmable Acceleration Card with Intel Arria 10 GX FPGA</a></td>
+</tr><tr><td>Download size</td>
+<td>~200 MB</td>
+<td>~18 GB</td>
+</tr><tr><td>Intel Acceleration Stack download</td>
+<td><a class="btn btn-primary" href="/content/www/us/en/programmable/f/download/accelerator/eula.html?swcode=WWW-SWD-ASR-12">Download Now</a></td>
+<td><a class="btn btn-primary" href="/content/www/us/en/programmable/f/download/accelerator/eula.html?swcode=WWW-SWD-ASD-12">Download Now</a></td>
+</tr><tr><td>md5sum</td>
+<td>393061340C31717C7C31C09E29F18FD2</td>
+<td>28A5BEF88AF2435D08EDC2F78F1AEA99</td>
+</tr><tr><td>Board Management Controller (BMC) version</td>
+<td><p>Firmware 26889</p>
+<p>&nbsp;</p>
+<p>Firmware Bootloader 26879</p>
+</td>
+<td><p>Firmware 26889</p>
+<p>&nbsp;</p>
+<p>Firmware Bootloader 26879</p>
+</td>
+</tr><tr><td>BMC firmware and tools download</td>
+<td>Register at&nbsp;<a href="https://www.bittware.com/fpga/intel/boards/pac-arria-10/">Intel PAC Firmware and Tools</a>&nbsp;and select Intel PAC&nbsp;</td>
+<td>Register at&nbsp;<a href="https://www.bittware.com/fpga/intel/boards/pac-arria-10/">Intel PAC Firmware and Tools</a>&nbsp;and select Intel PAC&nbsp;</td>
+</tr></tbody></table>
+</div>
+    </div>
+    <div class="table-notes top-padding-15">
+		<p><b>*CUSTOMER NOTICE:</b>&nbsp;For Intel Acceleration Stack v1.2, you must update the Board Management Controller and FPGA Image for Intel Programmable Acceleration Card with Intel Arria 10 GX FPGA to enable the new Remote Board Management Controller update and Telemetry over PCI Express* (PCIe*) features. Please follow the steps documented in <a href="/content/www/us/en/programmable/documentation/iyu1522005567196.html" target="_blank">Intel Acceleration Stack Quick Start Guide for Intel Programmable Acceleration Card with Intel Arria 10 GX FPGA</a>.</p>
+<p>Please check that your server original equipment manufacturer (OEM) supports the Intel Acceleration Stack Version v1.2 prior to proceeding with the download.</p>
+</div>
+    </div>
+
+
+<script type="text/javascript">
+        //document.getElementById("copyButton").addEventListener("click", function() {
+    	$('#comp-75d60f2d-9c7d-44dc-a201-09b4f7eca7cc #copyButton').click(function(){
+   			copyToClipboardMsg(document.getElementById("copyTarget"),"msg");
+
+    		$(".share-container").next().hide(); //hide share-container
+			$(".share-container").hide();
+			$(".share-container").prev().removeClass('active'); //remove class on btn-share
+		});
+
+function copyToClipboardMsg(elem, msgElem) {
+	  var succeed = copyToClipboard(elem);
+    var msg;
+    if (!succeed) {
+        msg = "Copy not supported or blocked.  Press Ctrl+c to copy."
+    } else {
+        msg = "Text copied to the clipboard."
+    }
+
+    alert(msg);
+}
+
+function copyToClipboard(elem) {
+	  // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+        // can just use the original source element for the selection and copy
+        target = elem;
+        origSelectionStart = elem.selectionStart;
+        origSelectionEnd = elem.selectionEnd;
+    } else {
+        // must use a temporary form element for the selection and copy
+        target = document.getElementById(targetId);
+        if (!target) {
+            var target = document.createElement("textarea");
+            target.style.position = "absolute";
+            target.style.left = "-9999px";
+            target.style.top = "0";
+            target.id = targetId;
+            document.body.appendChild(target);
+        }
+        target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+
+    // copy the selection
+    var succeed;
+    try {
+    	  succeed = document.execCommand("copy");
+    } catch(e) {
+        succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+        currentFocus.focus();
+    }
+
+    if (isInput) {
+        // restore prior selection
+        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+        // clear temporary content
+        target.textContent = "";
+    }
+    return succeed;
+}
+</script>
+
+</div>
+<div class="text-media parbase">
+
+
+
+<div class=" theme-white theme-dark-text">
+	<div class="container -container">
+		<div class="txt-media-wrapper top-padding bottom-padding  row section-content multimedia-on-left   text-media-text-only">
+			
+
+
+
+
+
+    <section class='text-media-item txt-media-content-wrapper-left text-media-content article-section col-md-12  '>
+        
+
+
+
+
+
+	<header class="txt-multimedia-hd" title="About Intel Acceleration Stack Version 1.2">
+		
+				<h2 class="txt-media-title content-title ">About Intel Acceleration Stack Version 1.2</h2>
+		
+
+		
+	</header>
+
+        <div class="txt-multimedia-content">
+        <ul>
+<li>Intel Acceleration Stack for Intel Xeon® CPU with FPGAs</li>
+<li>Release date: December 2018</li>
+<li>Target Platform: Intel Programmable Acceleration Card with Intel Arria® 10 GX FPGA</li>
+<li>Intel Acceleration Stack Version: 1.2 Production</li>
+<li>Intel Quartus Prime Pro Edition Software Version: 17.1.1</li>
+<li>Open Programmable Acceleration Engine (OPAE) Version: 1.1.2-1</li>
+<li><a href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/buy.html">View supported server models</a><br />
+</li>
+</ul>
+
+</div>
+        
+
+
+    </section>
+
+		</div>
+		
+	</div>
+</div></div>
+<div class="text-media parbase">
+
+
+
+<div class=" theme-white theme-dark-text">
+	<div class="container -container">
+		<div class="txt-media-wrapper top-padding bottom-padding  row section-content multimedia-on-left   text-media-text-only">
+			
+
+
+
+
+
+    <section class='text-media-item txt-media-content-wrapper-left text-media-content article-section col-md-12  '>
+        
+
+
+
+
+
+	<header class="txt-multimedia-hd" title="Intel Acceleration Stack Version 1.2 Resources">
+		
+				<h2 class="txt-media-title content-title ">Intel Acceleration Stack Version 1.2 Resources</h2>
+		
+
+		
+	</header>
+
+        <div class="txt-multimedia-content">
+        <p>Find technical documentation for the Intel Acceleration Stack Version 1.2.</p>
+
+</div>
+        
+
+
+    <div class="txt-multimedia-link">
+        <a class="btn btn-primary " href="/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/documentation.html">
+            Get Resources
+        </a>
+    </div>
+
+    </section>
+
+		</div>
+		
+	</div>
+</div></div>
+<div class="text-media parbase">
+
+
+
+<div class=" theme-white theme-dark-text">
+	<div class="container -container">
+		<div class="txt-media-wrapper top-padding bottom-padding  row section-content multimedia-on-left   text-media-text-only">
+			
+
+
+
+
+
+    <section class='text-media-item txt-media-content-wrapper-left text-media-content article-section col-md-12  '>
+        
+
+
+
+
+
+	<header class="txt-multimedia-hd" title="Archived Versions">
+		
+				<h2 class="txt-media-title content-title ">Archived Versions</h2>
+		
+
+		
+	</header>
+
+        <div class="txt-multimedia-content">
+        <p>If your design requires a prior version of Intel Acceleration Stack, please download from here.</p>
+
+</div>
+        
+
+
+    <div class="txt-multimedia-link">
+        <a class="btn btn-primary " href="/content/www/us/en/programmable/solutions/acceleration-hub/archives.html">
+            Download archived versions
+        </a>
+    </div>
+
+    </section>
+
+		</div>
+		
+	</div>
+</div></div>
+<div class="text-media parbase">
+
+
+
+<div class=" theme-white theme-dark-text">
+	<div class="container -container">
+		<div class="txt-media-wrapper top-padding bottom-padding  row section-content multimedia-on-left   text-media-text-only">
+			
+
+
+
+
+
+		</div>
+		<small><p>OpenCL and the OpenCL logo are trademarks of Apple Inc. used by permission of Khronos<br />
+</p>
+<p>* Other names and brands may be claimed as the property or others.</p>
+</small>
+	</div>
+</div></div>
+
+</div>
+</div><!--  end of main-content -->
+</div> <!--mainWrapper-->
+
+<!--googleoff:all-->
+    <!--IGHF Footer--> 
+<!--GAATversion='50recode.2' date='10/02/2017 08:00:00' Version='2.0':CharacterEncoding:utf8--> 
+<div id="recode50footer"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+INTELNAV = window.INTELNAV || {}; INTELNAV.renderSettingsFooter={version:"2.0 - 10/02/2017 08:00:00",OutputId:"gf_default"};
+/*]]>*/</script> 
+<noscript><div id="smallfootprint-footer"><ul><li>©Intel Corporation</li><li><a href="https://www.intel.com/content/www/us/en/legal/terms-of-use.html" target="">Terms of Use</a></li><li><a href="https://www.intel.com/content/www/us/en/legal/trademarks.html" target="">*Trademarks</a></li><li><a href="https://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html" target="">Privacy</a></li><li><a href="https://www.intel.com/content/www/us/en/privacy/intel-cookie-notice.html" target="">Cookies</a></li><li><a href="https://www.intel.com/content/www/us/en/policy/policy-human-trafficking-and-slavery.html" target="">Supply Chain Transparency </a></li><li><a href="https://www.intel.com/content/www/us/en/siteindex.html" target="">Site Map</a></li></ul></div></noscript>
+<!--/IGHF Footer-->
+    <!--googleon:all--><script type="text/javascript" src="/etc/clientlibs/altera-www/comps.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/altera-www/components.min.js"></script>
+<script type="text/javascript" src="/content/dam/altera-www/global/en_US/scripts/js/analytics/google_analytics.js"></script>
+	<script type="text/javascript" src="/content/dam/altera-www/global/en_US/scripts/js/analytics/auto-tracker.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+-------------------------------------------------------------------------------
+- Install Pre-requisite packages
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      sudo -E apt-get -f install dkms uuid-dev php7.2-dev php7.2-cli libjson-c-dev libhwloc-dev python-pip libjson-c-dev libhwloc-dev
+
+[sudo] password for bibo: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libjson-c-dev is already the newest version (0.12.1-1.3).
+libhwloc-dev is already the newest version (1.11.9-1).
+dkms is already the newest version (2.3-3ubuntu9.7).
+php7.2-cli is already the newest version (7.2.19-0ubuntu0.18.04.2).
+php7.2-dev is already the newest version (7.2.19-0ubuntu0.18.04.2).
+uuid-dev is already the newest version (2.31.1-0.4ubuntu3.4).
+python-pip is already the newest version (9.0.1-2.3~ubuntu1.18.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+The directory '/home/bibo/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/bibo/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Requirement already satisfied: intelhex in /usr/local/lib/python2.7/dist-packages
+
+-------------------------------------------------------------------------------
+- Copying a10_gx_pac_ias_1_2_pv.tar.gz to /home/bibo/eda/intel/inteldevstack
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      cp -pf /home/bibo/Downloads/tmp/a10_gx_pac_ias_1_2_pv_dev_installer/components/a10_gx_pac_ias_1_2_pv.tar.gz /home/bibo/eda/intel/inteldevstack
+
+
+-------------------------------------------------------------------------------
+- Untar a10_gx_pac_ias_1_2_pv.tar.gz
+-------------------------------------------------------------------------------
+DCP_LOC=/home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv
+>>> Running cmd:
+      tar -xzf /home/bibo/Downloads/tmp/a10_gx_pac_ias_1_2_pv_dev_installer/components/a10_gx_pac_ias_1_2_pv.tar.gz
+
+>>> Running cmd:
+      tar xf /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv/opencl/opencl_bsp*.tar.gz -C /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv/opencl/
+
+
+-------------------------------------------------------------------------------
+- Copying /home/bibo/Downloads/tmp/a10_gx_pac_ias_1_2_pv_dev_installer/components/setup_fim_and_bmc.sh to /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      cp -pf /home/bibo/Downloads/tmp/a10_gx_pac_ias_1_2_pv_dev_installer/components/setup_fim_and_bmc.sh /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv
+
+
+-------------------------------------------------------------------------------
+- Copying fpgaflash tool to /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv/sw
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      cp -pf /home/bibo/Downloads/tmp/a10_gx_pac_ias_1_2_pv_dev_installer/components/fpgaflash /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv/sw
+
+
+-------------------------------------------------------------------------------
+- Copying afu_platform_info tool to /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv/sw
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      cp -pf /home/bibo/Downloads/tmp/a10_gx_pac_ias_1_2_pv_dev_installer/components/afu_platform_info /home/bibo/eda/intel/inteldevstack/a10_gx_pac_ias_1_2_pv/sw
+
+
+-------------------------------------------------------------------------------
+- Installing OPAE deb packages for Ubuntu ...
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+- Remove any previous version of the OPAE FPGA libraries
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      sudo dpkg -r opae-intel-fpga-driver
+
+(Reading database ... 140708 files and directories currently installed.)
+Removing opae-intel-fpga-driver (1.1.2-1) ...
+-e
+-e Uninstall of intel-fpga module (version 1.1.2-1) beginning:
+
+-------- Uninstall Beginning --------
+Module:  intel-fpga
+Version: 1.1.2-1
+Kernel:  4.15.0-20-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+spi-nor-mod.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+altera-asmip2.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+avmmi-bmc.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+fpga-mgr-mod.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+intel-fpga-pci.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+intel-fpga-fme.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+intel-fpga-afu.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+intel-fpga-pac-hssi.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+intel-fpga-pac-iopll.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/4.15.0-20-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+Running the post_remove script:
+depmod........
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 1.1.2-1
+completely from the DKMS tree.
+------------------------------
+Done.
+-e Force regeneration of new initramfs
+/var/lib/dpkg/info/opae-intel-fpga-driver.prerm: 16: /var/lib/dpkg/info/opae-intel-fpga-driver.prerm: dracut: not found
+>>> Running cmd:
+      sudo dpkg -r opae-ase
+
+(Reading database ... 140649 files and directories currently installed.)
+Removing opae-ase (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -r opae-tools-extra
+
+(Reading database ... 140486 files and directories currently installed.)
+Removing opae-tools-extra (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -r opae-tools
+
+(Reading database ... 140346 files and directories currently installed.)
+Removing opae-tools (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -r opae-devel
+
+(Reading database ... 140342 files and directories currently installed.)
+Removing opae-devel (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -r opae-libs
+
+(Reading database ... 140220 files and directories currently installed.)
+Removing opae-libs (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+
+-------------------------------------------------------------------------------
+- Install the Altera® FPGA kernel drivers
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      sudo dpkg -i opae-intel-fpga-driver-1.1.2-1.x86_64.deb
+
+Selecting previously unselected package opae-intel-fpga-driver.
+(Reading database ... 140217 files and directories currently installed.)
+Preparing to unpack opae-intel-fpga-driver-1.1.2-1.x86_64.deb ...
+Unpacking opae-intel-fpga-driver (1.1.2-1) ...
+Setting up opae-intel-fpga-driver (1.1.2-1) ...
+Add module source to dkms
+
+Creating symlink /var/lib/dkms/intel-fpga/1.1.2-1/source ->
+                 /usr/src/intel-fpga-1.1.2-1
+
+DKMS: add completed.
+
+Kernel preparation unnecessary for this kernel.  Skipping...
+
+Building module:
+cleaning build area...
+make -j4 KERNELRELEASE=4.15.0-20-generic KERNELDIR=/lib/modules/4.15.0-20-generic/build......
+cleaning build area...
+
+DKMS: build completed.
+
+spi-nor-mod:
+Running module version sanity check.
+
+Running the pre_install script:
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+altera-asmip2.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+avmmi-bmc.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+fpga-mgr-mod.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+intel-fpga-pci.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+intel-fpga-fme.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+intel-fpga-afu.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+intel-fpga-pac-hssi.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+intel-fpga-pac-iopll.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.15.0-20-generic/updates/dkms/
+
+Running the post_install script:
+
+depmod...
+
+DKMS: install completed.
+
+-------------------------------------------------------------------------------
+- installing OPAE software ...
+-------------------------------------------------------------------------------
+>>> Running cmd:
+      sudo dpkg -i opae-libs-1.1.2-1.x86_64.deb
+
+Selecting previously unselected package opae-libs.
+(Reading database ... 140276 files and directories currently installed.)
+Preparing to unpack opae-libs-1.1.2-1.x86_64.deb ...
+Unpacking opae-libs (1.1.2) ...
+Setting up opae-libs (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -i opae-devel-1.1.2-1.x86_64.deb
+
+Selecting previously unselected package opae-devel.
+(Reading database ... 140280 files and directories currently installed.)
+Preparing to unpack opae-devel-1.1.2-1.x86_64.deb ...
+Unpacking opae-devel (1.1.2) ...
+Setting up opae-devel (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -i opae-tools-1.1.2-1.x86_64.deb
+
+Selecting previously unselected package opae-tools.
+(Reading database ... 140402 files and directories currently installed.)
+Preparing to unpack opae-tools-1.1.2-1.x86_64.deb ...
+Unpacking opae-tools (1.1.2) ...
+Setting up opae-tools (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -i opae-tools-extra-1.1.2-1.x86_64.deb
+
+Selecting previously unselected package opae-tools-extra.
+(Reading database ... 140406 files and directories currently installed.)
+Preparing to unpack opae-tools-extra-1.1.2-1.x86_64.deb ...
+Unpacking opae-tools-extra (1.1.2) ...
+Setting up opae-tools-extra (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+>>> Running cmd:
+      sudo dpkg -i opae-ase-1.1.2-1.x86_64.deb
+
+Selecting previously unselected package opae-ase.
+(Reading database ... 140546 files and directories currently installed.)
+Preparing to unpack opae-ase-1.1.2-1.x86_64.deb ...
+Unpacking opae-ase (1.1.2) ...
+Setting up opae-ase (1.1.2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+
+-------------------------------------------------------------------------------
+- Installing the Intel FPGA Quartus Prime Pro Edition Software
+-------------------------------------------------------------------------------
